@@ -1,0 +1,267 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Men's Emmaus Retreat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    align-items: center;
+}
+
+body {
+    background-color: #eeeccd;
+    font-family: Arial, sans-serif;
+    margin: 25px;
+
+}   
+
+#contain1 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'header header header'
+        'par par par'
+        'pix pix pix'
+        'subhead subhead subhead'
+        'b1 b1 b1'
+        'b2 b2 b2'
+        'b3 b3 b3'
+        'b4 b4 b4'
+        'b5 b5 b5'
+        'b6 b6 b6'
+        }
+
+    #title {
+        grid-area: header;
+    }
+
+    #parishes {
+        grid-area: par;
+        font-size: .65em;
+        text-align: center;
+    }
+
+    #parishes span {
+        display: none;
+    }
+
+    #emmaus_image {
+        /*max-width: 100%;*/
+        grid-area: pix;
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #invite {
+        grid-area: subhead;
+        text-align: justify;
+        line-height: 1.25;
+    }
+
+    #item1 {
+        grid-area: b1;
+        text-align: center;
+        /*border: #735026;
+        border-style: solid;
+        border-width: 2px;*/
+        padding: 25px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+
+    #item2 {
+        grid-area: b2;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    #item3 {
+        grid-area: b3;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .art {
+        max-width: 80%;
+    }
+
+    #location {
+        grid-area: b4;
+    }
+
+    #contact1 {
+        grid-area: b5;
+    }
+
+    #contact2 {
+        grid-area: b6;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: #735026;
+        text-align: center;
+    }
+
+    h3 {font-size: 1.1em;
+        text-align: center;}
+
+    #contact1 a {text-decoration: none; color: #583326; font-weight: bolder;}
+    #contact2 a {text-decoration: none; color: #583326; font-weight: bolder;}
+
+   @media screen and (min-width: 450px) {
+        h1 {font-size: 1.75em;}
+        .art {max-width: 70%;}
+    }
+
+    @media screen and (min-width: 600px) {
+        h1 {font-size: 2em;}
+        h3 {font-size: 1.5em;}
+        .art {max-width: 50%;}
+        #contain1 {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'header header'
+        'par par'
+        'pix pix'
+        'subhead subhead'
+        'b1 b1'
+        'b2 b2'
+        'b3 b3'
+        'b4 b4'
+        'b5 b6'
+        }
+        #parishes {font-size: 1em;}
+    }
+
+    @media screen and (min-width: 800px) {
+        h1 {font-size: 2.75em;}
+        h3 {font-size: 2em;}
+        .art {max-width: 60%;}
+        #contain1 {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'header header header'
+        'par par par'
+        'pix pix pix'
+        'subhead subhead subhead'
+        'b1 b2 b3'
+        'b4 b4 b4'
+        'b5 b6 b7'
+        }
+        #parishes span {display: inline; font-size: .75em; font-weight: 300;}
+    }
+    
+
+    @media screen and (min-width:960px) {
+        #contain1 {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        'm1 header header header m2'
+        'par par par par par'
+        'm3 pix pix pix m4'
+        'm5 subhead subhead subhead m6'
+        'm7 b1 b2 b3 m8'
+        'm9 b4 b4 b4 m10'
+        'm11 b5 b6 b7 m12'
+        }
+
+    }
+
+    @media screen and (min-width:1200px) {
+        h1 {font-size: 3em;}
+        h3 {font-size: 2.2em;}
+        body {font-size: 1.1em;}
+        h4 {font-size:larger}
+    }
+
+    @media screen and (min-width:1400px) {
+        body {font-size: 1.2em;}
+    }
+
+</style>
+</head>
+
+<header>
+</header>
+
+<body>
+    <div id="contain1">
+        <div id="title">
+        <h1>MEN’S EMMAUS RETREAT</h1>
+        <h3>Meet Jesus on the Road to Emmaus</h3>
+        <h3>November 11-13, 2022</h3>
+        </div>
+
+    <p id="parishes">ST. ANTHONY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST. JOSEPH <span>&nbsp;&nbsp;LAKELAND&nbsp;&nbsp;WINTER HAVEN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESURRECTION</p>
+        
+    <div id="emmaus_image">
+        <picture>
+            <source media="(min-width:961px)" srcset="images/emmaus1200.jpg">
+            <source media="(min-width:801px)" srcset="images/emmaus960.jpg">
+            <source media="(min-width:641px)" srcset="images/emmaus800.jpg">
+            <source media="(min-width:481px)" srcset="images/emmaus640.jpg">
+            <img src="images/emmaus480.jpg" alt="supper at emmaus">
+        </picture>
+    </div>
+
+    <div id="invite">
+        <p>You are invited to a retreat experience for and by the men of our parish community.  This retreat is based on the <em> The Appearance on the Road to Emmaus </em> as found in Luke’s Gospel 24:13-35.</p>
+    </div>
+
+    <div id="item1">
+        <img class="art" src="images/biblecross.svg" alt="Bible with Cross">
+        <h4>Deepen your relationship with God</h4>
+    </div>
+    
+    <div id="item2">
+        <img class="art" src="images/eucharist.svg" alt="Holy Eucharist">
+        <h4>Find Christian fellowship</h4>
+    </div>
+
+    <div id="item3">
+        <img class="art" src="images/holyspirit.svg" alt="Holy Spirit">
+        <h4>Be renewed and refreshed in the Holy Spirit</h4>
+    </div>
+
+    <div id="location">
+        <p>The retreat will be held at Camp Gilead near Polk City.  Transportation is provided.  Cost is $120 (includes room, board and program).</p>
+
+        <h4>For more information, contact:</h4>
+    </div>
+
+    <div id="contact1">
+        <p>Henry Godinez <br><a href="mailto:hankgodinez@yahoo.com">hankgodinez@yahoo.com</a><br> <a href="tel:8636026307">863.602.6307</a></p>
+    </div>
+
+    <div id="contact2">
+    <p>Tom Deardorff <br><a href="mailto:tmdplanner@gmail.com">tmdplanner@gmail.com</a><br> <a href="tel:863661185">863.661.1185</a> </p>
+    </div>
+
+</div>
+
+</body>
+</html>
